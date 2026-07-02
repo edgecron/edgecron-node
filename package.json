@@ -1,0 +1,48 @@
+{
+  "name": "edgecron-node",
+  "version": "1.0.0",
+  "description": "Official TypeScript SDK for the EdgeCron webhook scheduling and callback delivery platform.",
+  "license": "MIT",
+  "author": "EdgeCron Team",
+  "homepage": "https://www.edgecron.com",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/edgecron/edgecron-node.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edgecron/edgecron-node/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "keywords": [
+    "edgecron",
+    "webhook",
+    "scheduling",
+    "callback",
+    "delivery",
+    "typescript"
+  ],
+  "devDependencies": {
+    "@types/node": "^24.0.0",
+    "typescript": "^5.8.3",
+    "vitest": "^3.2.4"
+  }
+}

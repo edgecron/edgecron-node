@@ -1,0 +1,4 @@
+# Already covered by root .gitignore: node_modules/, dist/
+# Keep local for explicitness
+node_modules/
+dist/
