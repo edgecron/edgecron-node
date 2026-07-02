@@ -8,6 +8,7 @@ on:
 
 permissions:
   contents: read
+  id-token: write
 
 jobs:
   publish:
@@ -36,6 +37,3 @@ jobs:
 
       - name: Publish to npm
         run: npm publish
-        # 👇 【核心修复】添加这行环境变量，传入你的NPM令牌（解决认证失败）
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
